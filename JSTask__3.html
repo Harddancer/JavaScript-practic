@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        /*3. Вывести в консоль значения выражений и объяснить почему получились такие 
+        значения используя комментарии к каждому выражению:
+
+       1. 10 + 10 + "10";
+        2.10 + "10" + 10;
+        3.10 + 10 + +"10"; (обратите внимание на пробелы, пишите также)
+        4.10 / -"";
+        5.10 / +"2,5"; (да здесь запятая, это не опечатка)*/
+
+        let result = 10 + 10 + '10';
+        console.log(result);
+
+        let result = 10 + '10' + 10;
+        console.log(result);
+        
+        let result = 10 + 10 + + '10';
+        console.log(result);
+
+        let result = 10 / -"";
+        console.log(result);
+
+        let result = 10 / +"2,5";
+        console.log(result);
+
+        /*1. 10 тип Number + 10 тип Number + 10 тип Str -получаем 2010, 
+      
+        2. 10 тип Number + 10 тип Str + 10 тип Nnmber -получаем 101010, 
+        
+        3. 10 тип Number + 10 тип Str + 10 тип Nnmber -получаем 30, 
+        
+        4. 10 тип Number + 10 тип Str + 10 тип Nnmber -получаем infinity, 
+        (глобальная переменная, не исп в опреациях, возникает при делении на 0 или на отриц
+         не определенное число )
+        5.10 делим на цело типо(в js  все  дробное) на 2,5 в связи 
+        с запятой в левом операнде, получаем NaN 
+        
+        (тут интересно в питоне динамическая типизация, была ошибка при операции с разным типом данных, 
+        В JS  я так понимаю это не критично???  )*/
+    </script>
+</body>
+</html>
