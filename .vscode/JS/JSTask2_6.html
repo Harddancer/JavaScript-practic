@@ -20,26 +20,19 @@
         }
         button[name="run_script"]:hover { 
           background: #15ff00;
-    </style>
-    <button type="button" name ="run_script" onclick="result()">Рассчитать результат</button>
-    <script>
+        </style>
+
+        <script>
         "use strict"
-        /**@namespace
-        *
-        
-        function result(){
+       
+        function summa(){
         let a = parseInt(prompt('число 1'));
         let b = parseInt(prompt('число 2'));
-        if (a >= 0 && b >= 0) {
-        console.log("Разность = " + (a - b));
+        console.log(a+b);
         }
-        if (a < 0 && b < 0) {
-        console.log("Произведение = " + (a * b));
-        }
-        if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
-        console.log("Сумма = " + (a + b));
-        }
-    </script>
-   
+
+        </script>
+    <button type="button" name="run_script" onclick="summa()">Итоговая сумма</button>
+    
 </body>
 </html>
