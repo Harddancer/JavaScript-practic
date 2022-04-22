@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css"> 
+        button[name="run_script"] { 
+          border: none;
+          border-radius: 10px;
+          padding: 50px 25px;
+          background: #eeff00;
+          cursor: zoom-in;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: hsl(0, 0%, 1%);
+        }
+        button[name="run_script"]:hover { 
+          background: #15ff00;
+    </style>
+    <button type="button" name ="run_script" onclick="result()">Рассчитать результат</button>
+    <script>
+        "use strict"
+        function result(){
+        let a = parseInt(prompt('число 1'));
+        let b = parseInt(prompt('число 2'));
+        if (a >= 0 && b >= 0) {
+        console.log("Разность = " + (a - b));
+        }
+        if (a < 0 && b < 0) {
+        console.log("Произведение = " + (a * b));
+        }
+        if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+        console.log("Сумма = " + (a + b));
+        }
+    </script>
+   
+</body>
+</html>
