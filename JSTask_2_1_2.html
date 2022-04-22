@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    'use strict';
+    let a = 1, b = 1, c, d;// объявляем переменные a b  значения 1,  c и d  undefinde
+    c = ++a;// инкремент a  увеличиваем a и присваиваем значение перемнной с
+    alert(c); // ответ: 2
+
+    d = b++;// переменной d присваиваем значение b =1, b b постпрефикс
+    alert(d); //ответ: 1
+
+    c = 2 + ++a;// переменной c  присваиваем значение препрефикс a =2 + 1
+    alert(c); //ответ: 5
+
+    d = 2 + b++;// переменной d  присваиваем значение b + 2, так же постпрефикс инкремент b
+    alert(d); //ответ: 4
+    alert(a); //3
+    alert(b); //3
+
+    a = 2; // объявляем переменную и присваиваем значение 2 тип number
+    let x = 1 + (a*= 2); //  объявляем переменную x значение 5 number a  присваивается значение 4
+    alert(a,x);
+    
+
+    </script>
+</body>
+</html>
