@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script async src="f.js"></script>
+    <script>
+    'use strict'
+    /*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+    где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+    переданного значения операции (использовать switch) выполнить одну из арифметических операций
+    (использовать функции из задания 4) и вернуть полученное значение.*/
+    
+    function mathOperation(arg1,arg2,operation){
+        let result = NaN;
+        switch(operation){
+            case 'summa':
+                result = arg1 + arg2;
+                break;
+            case 'divv':
+                result = arg1/arg2;
+                break;
+            case 'sub':
+                result = arg1 -arg2;
+                break;
+            case 'mult':
+                result = arg1*arg2;
+                break;
+          
+        }
+        return result;
+    }
+    console.log(mathOperation(4,3,'mult'))
+    
+    </script>
+</body>
+</html>

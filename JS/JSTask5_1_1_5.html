@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 1</title>
+</head>
+<style>
+	.border_style_double{
+	border: 5px double #ff1e1e;
+	padding: 10px;
+	margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d4e0eb;
+	}
+
+</style>
+<body>
+    <!-- Задание. Выведите содержимое тега title в консоль. -->
+    <div class="border_style_double"> </div>
+    <script>
+       'use strict'
+       let t = document.title;
+       let elem = document.querySelector('.border_style_double');
+       elem.innerText = t;
+                
+  
+
+      
+    </script>
+</body>
+</html>
