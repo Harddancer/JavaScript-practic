@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #mouseTarget {
+  box-sizing: border-box;
+  width:10rem;
+  border:5px solid rgb(245, 95, 9);
+}
+</style>
+<body>
+    <textarea id = 'mouseTarget'></textarea>
+
+    <!-- Задание. Сделайте, чтобы при наведении на textarea в консоли
+    появлялось сообщение: "вы навели на textarea" -->
+
+    <script>
+        'use strict'
+        
+        let b = document.querySelector('textarea');
+        b.addEventListener('mouseenter',function(){
+        console.log('вы навели на textarea');
+        b.style.background = 'gray';
+        });
+   
+    </script>
+</body>
+</html>
